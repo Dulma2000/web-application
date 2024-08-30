@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@668&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 90%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/img29.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.form_container{
+    width: 390px;
+    height: 500px;
+    padding: 0 1rem;
+    border-radius: 3px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    background: rgba(255, 228, 196, 0.359);
+    overflow: hidden;
+    z-index: 1;
+}
+.form_overlay{
+    position: absolute;
+    background-color: rgba(165, 106, 42, 0.4);
+    content: '';
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    z-index: 2;
+    top:-20%;
+}
+
+.titleDiv{
+    position: relative;
+    width: 100%;
+    margin: 10px auto 5px;
+    text-align: center;
+    transform: translateY(-3rem);
+    z-index: 1000;
+}
+.title{
+    color: rgb(60, 86, 11);
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.subTitle{
+    color:rgb(214, 210, 85);
+    font-weight: bold;
+}
+.rows{
+    display: grid;
+    position: relative;
+    gap: 1rem;
+    z-index: 1000;
+    transform: translateY(-1rem);
+    padding-bottom: 1rem;
+}
+label{
+    display: block;
+    padding-bottom: .285rem;
+    font-size: 13px;
+    font-weight: 600;
+}
+input{
+    width: 100%;
+    background-color: rgb(246, 246, 243);
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: 500;
+    padding: .5rem;
+    border-radius: 3px;
+}
+::placeholder{
+    font-size: 10px;
+}
+#submitBtn{
+    background-color: rgb(222, 97, 19);
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 80px;
+    margin-left: 80px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    &:hover{
+        background-color: bisque;
+        color: black;
+    }
+}
+
+.registerLink{
+    display: block;
+    font-size: 13px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.registerLink a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.register_container{
+    height: 650px;
+    width: 390px;
+    padding: 0 1rem;
+    border-radius: 3px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    background: rgba(233, 183, 139, 0.441);
+    overflow: hidden;
+    z-index: 1;
+}
+.register_overlay{
+    position: absolute;
+    background-color: rgba(165, 42, 42, 0.279);
+    content: '';
+    width: 500px;
+    border-radius: 50%;
+    z-index: 2;
+    height: 590px;
+    top: -20%;
+}
+.back img{
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
